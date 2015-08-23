@@ -63,7 +63,7 @@ View(MData) # to view merged data of Subject, Activity and Features
 subfeaturesNames<-featuresNames$V2[grep("mean\\(\\)|std\\(\\)", featuresNames$V2)]
 
 ## b. Subset the data frame MData by selected names of features
-selectedNames<-c(as.character(subfeaturesNames), "Subject", "Activity" )
+selectedNames<-c(as.character(subfeaturesNames), "subject", "activity" )
 MData<-subset(MData,select=selectedNames) 
 str(MData) # to check the structure of the data frame MData
 
